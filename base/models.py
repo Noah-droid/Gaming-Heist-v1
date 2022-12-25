@@ -22,12 +22,13 @@ class User(AbstractUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['username']
 
-    twitter = models.URLField(max_length=500, null=True, blank=True)
-    linkedin = models.URLField(max_length=500, null=True, blank=True)
-    website = models.URLField(max_length=500, null=True, blank=True)
-    facebook = models.URLField(max_length=500, null=True, blank=True)
-    github = models.URLField(max_length=500, null=True, blank=True)
-
+    # twitter = models.URLField(max_length=500, null=True, blank=True)
+    # linkedin = models.URLField(max_length=500, null=True, blank=True)
+    # website = models.URLField(max_length=500, null=True, blank=True)
+    # facebook = models.URLField(max_length=500, null=True, blank=True)
+    # github = models.URLField(max_length=500, null=True, blank=True)
+    cod_id = models.CharField(max_length=300, null=True, blank=True)
+    pubg_id = models.CharField(max_length=300, null=True, blank=True)
     class Meta:
         ordering = ['avatar']
 
